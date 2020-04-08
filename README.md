@@ -778,7 +778,7 @@ It is also a good practice to annotate overridden methods with `@Override` to ma
 
 * Tell all the Android application components. [Android Official](https://developer.android.com/guide/components/fundamentals.html#Components)
 
-* What is the structure of an Android Application?
+* What is the structure of an Android Application? [Android Application Structure](https://www.tutorialride.com/android/structure-of-android-application.htm)
 
 * What is `Context`? How is it used? [MindOrks](https://blog.mindorks.com/understanding-context-in-android-application-330913e32514)
 
@@ -806,6 +806,8 @@ It is also a good practice to annotate overridden methods with `@Override` to ma
 
 * What is retained `Fragment`? [AndroidDesignPatterns](https://www.androiddesignpatterns.com/2013/04/retaining-objects-across-config-changes.html)
 
+* What happened when you run a `Fragment Transaction` on `Activity` onStop() callback ? [reference for answer](https://www.androiddesignpatterns.com/2013/08/fragment-transaction-commit-state-loss.html)
+
 #### Views and ViewGroups
 
 * What is `View` in Android? [MindOrks](https://blog.mindorks.com/android-user-interface-view-components)
@@ -829,6 +831,10 @@ It is also a good practice to annotate overridden methods with `@Override` to ma
 #### Displaying Lists of Content
 
 * What is the difference between `ListView` and `RecyclerView`?
+
+* How `RecyclerView Adapter` render item in recycler view ?
+
+* Suppose you have 100 data, how many item will be rendered by `RecyclerView Adapter` to your phone screen ?
 
 * What is the ViewHolder pattern? Why should we use it?
 
@@ -871,6 +877,8 @@ It is also a good practice to annotate overridden methods with `@Override` to ma
 * `Service` vs `IntentService`. [MindOrks](https://blog.mindorks.com/service-vs-intentservice-in-android)
 
 * What is a `JobScheduler`? [Vogella](http://www.vogella.com/tutorials/AndroidTaskScheduling/article.html)
+
+* Explain about `WorkManager` ? [Android Docs](https://developer.android.com/topic/libraries/architecture/workmanager)
 
 #### Inter-process Communication
 
@@ -1080,6 +1088,8 @@ It is also a good practice to annotate overridden methods with `@Override` to ma
 
 * Firebase. [Firebase.google.com](https://firebase.google.com/)
 
+* Leak Canary [Documentation](https://square.github.io/leakcanary/) [Droidcon NYC 2015 About Leak Canary by Py](https://www.youtube.com/watch?v=mU1VcKx8Wzw)
+
 
 ### Android Test Driven Development
 
@@ -1100,6 +1110,13 @@ It is also a good practice to annotate overridden methods with `@Override` to ma
 * Why Mockito is used? [Official site](http://site.mockito.org/)
 
 * Describe JUnit test.
+
+* What are testing type in Android ?
+
+* What is the benefit of espresso than any other instrumentation test?
+
+* How to make espresso can do dynamic checking in a case when you want to fetch the api then you want espresso to do instrumentation test after the data fetched ?
+
 
 
 ### Others
@@ -1150,6 +1167,12 @@ It is also a good practice to annotate overridden methods with `@Override` to ma
 
 * What is Chrome Custom Tabs? How to display web content in your app? [MindOrks](https://blog.mindorks.com/android-browser-lets-launch-chrome-custom-tabs-with-kotlin)
 
+* How to solve cyclic dependencies ?
+- Cyclic dependencies will cause stack overflow error and it is happened because class try to initiate each dependency in its constructor. To solve this we can make a setter where we can inject the dependency or you can just inject it directly to the constructor.
+
+* Explain about dependency injection ?
+
+* What is the usage of `Publish Subject` and what problem solved by using those ?
 
 ### Found this project useful :heart:
 
